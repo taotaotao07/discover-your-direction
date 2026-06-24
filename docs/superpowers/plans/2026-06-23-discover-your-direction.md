@@ -1,5 +1,7 @@
 # Discover Your Direction Implementation Plan
 
+> **Execution status:** The implementation and forward tests are complete. See the [sanitized validation report](../../validation/2026-06-24-forward-tests.md) for executed checks, outcomes, and remaining limitations; historical task checkboxes below are preserved as the original plan.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build, validate, and publish a Chinese-first Codex Skill that helps experienced users select a falsifiable direction experiment without presenting AI inference as destiny.
@@ -30,7 +32,7 @@
 - [ ] **Step 1: Run the official initializer**
 
 ```powershell
-python "$HOME\.codex\skills\.system\skill-creator\scripts\init_skill.py" discover-your-direction --path . --resources references --interface 'display_name=发现你的方向' --interface 'short_description=从真实经历与本地资料中提炼方向，并设计可证伪的七天实验' --interface 'default_prompt=Use $discover-your-direction to help me choose a direction experiment from my real experience.'
+python "$HOME\.codex\skills\.system\skill-creator\scripts\init_skill.py" discover-your-direction --path . --resources references --interface 'display_name=发现你的方向' --interface 'short_description=从真实经历与可选资料中提炼方向，并设计可证伪的七天实验' --interface 'default_prompt=Use $discover-your-direction to help me choose a direction experiment from my real experience.'
 ```
 
 Expected: the Skill folder contains `SKILL.md`, `agents/openai.yaml`, and `references/`.

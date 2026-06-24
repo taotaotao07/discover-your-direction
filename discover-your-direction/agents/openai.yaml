@@ -1,4 +1,4 @@
 interface:
   display_name: "发现你的方向"
-  short_description: "从真实经历与本地资料中提炼方向，并设计可证伪的七天实验"
+  short_description: "从真实经历与可选资料中提炼方向，并设计可证伪的七天实验"
   default_prompt: "Use $discover-your-direction to help me choose a direction experiment from my real experience."
